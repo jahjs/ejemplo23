@@ -1,0 +1,52 @@
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin-top:100px;
+    padding: 0;
+}
+
+@keyframes pepe {
+       0%  {  border-width: 5px 1px 1px 1px;}
+       25% { border-width: 20px 1px 1px 1px;}
+       60% { border-width: 30px 1px 10px 1px;}
+       75% { border-width: 80px 1px 1px 1px;}
+}
+
+div {
+    
+    box-sizing: border-box;
+    border: solid black 10px;
+    border-width: 20px 1px 1px 1px;
+    width: 100px;
+    height: 50px;
+    background: #7a9fba;
+    border-radius: 100%  10% 10% 10%;
+    box-shadow: 1px  2px  darkslategrey;
+    position: relative;
+    animation: pepe 1s  reverse infinite;
+}
+
+
+
+
+
+
+div:before {
+     position: absolute;
+     top: 1px;
+     
+     transform: rotate(0deg) ;
+     content: "  ";
+     width: 100px;
+     height: 50px;
+     border-radius: 50%;
+     
+     background: #e1e718;
+     z-index: -1;
+     
+}
+
+gauge1 {
+
+}
